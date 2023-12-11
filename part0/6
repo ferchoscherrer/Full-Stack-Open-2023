@@ -1,1 +1,7 @@
-
+flowchart TD
+    A[Browser] -->|Get https://studies.cs.helsinki.fi/exampleapp/spa | B(Server)
+    B --> C{Document HTML}
+    C -->|4| G[new_note_spa]
+    G -->|User| H[new text] 
+    H -->|Json Data| I{save Buttom}
+    I --> |Event handler| J[new note]
