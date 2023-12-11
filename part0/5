@@ -1,0 +1,5 @@
+sequenceDiagram
+    Browser->>+Server: initial request
+    Server-->>-Browser: HTML Document
+    Browser->>+Server: JavaScript Code
+    Server-->>-Browser: Json Structure
