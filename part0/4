@@ -1,1 +1,10 @@
-
+flowchart TD
+    A[Browser] -->|Get https://studies.cs.helsinki.fi/exampleapp/notes | B(Server)
+    B --> C{Document HTML}
+    C -->|1| D[main.js]
+    C -->|2| E[main.css]
+    C -->|3| F[notes]
+    C -->|4| G[new_note]
+    G -->|User| H[new text] 
+    H -->|POST Method| I{save Buttom}
+    I --> |Response server| J[Location /notes]
